@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Style changes
 
 This blog theme is been built using a CSS pre-processor called SCSS. Any changes has to be inside of SCSS file structure located in `assets/style/scss` then exported to CSS using the following command:
@@ -11,3 +12,6 @@ if you need to do constantly changes i higly recommend to use the `--watch` para
 ```console
 sass --watch ./assets/style/scss/main.scss ./assets/style/main.min.css --style compressed
 ```
+=======
+# wordpress-theme-boilerplate
+>>>>>>> a997587232871b707357446ca9e918141442297f
