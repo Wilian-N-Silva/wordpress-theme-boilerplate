@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @include viewport-medium {
+    max-width: $container-max-width-medium;
+  }
+
+  @include viewport-large {
+    max-width: $container-max-width-large;
+  }
+
+  @include viewport-xl {
+    max-width: $container-max-width-xl;
+  }
+
+  @include viewport-xxl {
+    max-width: $container-max-width-xxl;
+  }
+}
+
+.visually-strong {
+  font-weight: 900 !important;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: $viewport-max-width-large) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: $viewport-min-width-xl) {
+  .mobile-only {
+    display: none !important;
+  }
+}

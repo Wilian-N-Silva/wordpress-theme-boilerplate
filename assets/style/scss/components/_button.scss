@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  font: $typography-button;
+
+  color: $color-label-button-default;
+  background: $color-bg-button-default;
+
+  padding: .75rem 1.5rem;
+
+  border-radius: .75rem;
+  transition: background .3s;
+  transition: transform .3s;
+
+  &:hover {
+    background: $color-bg-button-default--hover;
+    background: $color-label-button-default--hover;
+    transform: scale(1.1);
+  }
+
+  &--club-mpm {
+    color: $color-label-button-club-mpm;
+    background: $color-bg-button-club-mpm;
+
+    &:hover {
+      color: $color-label-button-club-mpm--hover;
+      background: $color-bg-button-club-mpm--hover;
+    }
+  }
+
+  &--link {
+    font: $typography-default;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+
+    &:hover {
+      background: none;
+    }
+  }
+}

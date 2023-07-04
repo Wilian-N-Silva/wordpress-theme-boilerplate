@@ -1,0 +1,35 @@
+@mixin viewport-small {
+  @media screen and (min-width: $viewport-min-width-small) {
+    @content;
+  }
+}
+
+@mixin viewport-medium {
+  @media screen and (min-width: $viewport-min-width-medium) {
+    @content;
+  }
+}
+
+@mixin viewport-large {
+  @media screen and (min-width: $viewport-min-width-large) {
+    @content;
+  }
+}
+
+@mixin viewport-large-max {
+  @media screen and (max-width: $viewport-max-width-large) {
+    @content;
+  }
+}
+
+@mixin viewport-xl {
+  @media screen and (min-width: $viewport-min-width-xl) {
+    @content;
+  }
+}
+
+@mixin viewport-xxl {
+  @media screen and (min-width: $viewport-min-width-xxl) {
+    @content;
+  }
+}

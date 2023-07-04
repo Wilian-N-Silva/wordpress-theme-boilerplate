@@ -1,0 +1,40 @@
+.rules {
+  min-height: 100vh;
+  background-color: $color-bg-rules;
+
+  &__container {
+    min-height: 100vh;
+    padding: 4rem 1.5rem 4.5rem;
+    background-color: $color-bg-rules--container;
+
+    h1 {
+      font: $typography-heading-2;
+      color: $color-title-rules;
+      font-size: 2rem;
+
+      margin-bottom: 2rem;
+    }
+
+    p+p {
+      margin-bottom: 1rem;
+    }
+
+    @include viewport-medium {
+      padding: 4rem 0 4.5rem;
+
+      h1 {
+        font: $typography-heading-2;
+      }
+    }
+  }
+
+  & .wrapper {
+    margin: 4rem 0 1rem;
+    text-align: center;
+
+    &--left {
+      margin: 1rem 0 2rem;
+      text-align: start;
+    }
+  }
+}
